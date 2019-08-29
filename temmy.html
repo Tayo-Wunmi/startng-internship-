@@ -2,77 +2,106 @@
 <head>
     <title>TEMITAYO'S CV</title>
     <style>
+        
         body{
             background-color: #EEE;
-            font-family: "Verdana", Arial, Sans-serif;
-            font-size: 14px;
+            font-family: Helvetica, Arial, sans-serif;
         }
 
-        #container{
+        p {
+        margin: 2px;
+        font-size: 13px;
+        }
+
+        h4 {
+           background-color:green;
+           color: white;
+           text-align: center;
+       }
+
+       li, ol {
+           font-size: 13px;
+           line-height: 20px; 
+       }
+
+       #container{
             background-color: white; 
             width: 1200px;
             margin-left: auto;
             margin-right: auto;
             padding: 10px;
-        }
-
-        #header{
-            color: green;
-            padding: 20px;
-            text-align:left; 
        }
 
        #display{
            float: right; 
-           width="100"
-           margin: 0px 0px 15px 15px;
-           clear: both; 
+           margin-right: 20px;
+           margin-top: 20px;
        }
 
-           #content {
+       #header{
+            color: green;
+            width: 600px;
+            float: left; 
+            margin-left: 20px;
+            padding: 5px;
+       }
+      
+
+       #content {
+           clear: both;
            padding: 20px;
            text-align: justify;
        }
 
-       #first{
-           font-size: 14px;
+       #first p {
            line-height: 25px;
        }
 
-       h4{
-           background-color:grey;
-           color: white;
-           text-align: center;
+       #tab {
+           margin-bottom: 10px; 
+           line-height: 25px;
        }
 
-       table{
+       table {
            width: 100%;
            font-size: 13px;
        }
 
-       th{ 
+       th { 
            text-align: left; 
+           color: green;
        }
 
-       th#date{
+       #exp .date {
            text-align: right;
-       }
+      }
+      
+      #tab .date {
+           text-align: right;
+      }
 
-       ul#skill {
-           line-height:25px;
+       #skill ul {
+           line-height: 25px;
            margin-top:14px;
            margin-bottom:20px;
        }
 
+       #skill li {
+           font-weight: bold;
+           color: green;
+           margin-top: 15px;
+       }
+
+
     </style>
 </head>
 
-
 <body>
     <div id="container">
+
+            <img id="display" src="https://res.cloudinary.com/temmy/image/upload/v1554489410/picture4__1_.png" alt="Profile Picture" width="160">
             
             <div id="header">
-                     <img id="display" src="https://res.cloudinary.com/temmy/image/upload/v1554489410/picture4__1_.png" alt="Profile Picture" width="160">
                      <h2>AJAKORE TEMITAYO FAUSAT</h2>
                      <p>Bariga, Lagos, Nigeria</p>
                      <p>Mobile:(+234) 08132159265</p>
@@ -85,22 +114,22 @@
             
                  <div id="first">
                      <h4>CAREER SUMMARY</h4> 
-                     <p><p><strong>Temitayo</strong> is a management consultant with over 4 years’ experience working on innovative projects in the public and private sector combined with success in business development, recruitment, and strategic communications; with a strong capacity to lead teams and collaborate with consultants to initiate and implement projects. A seasoned facilitator recognized for training and developing content for capacity building and learning development. She offers additional transferable skills in strategic business planning, conflict management, and people management gleaned from experience working with Private Sector and Non-Governmental Organization.</p>
+                     <p><p><strong>Temitayo</strong> is a management consultant with over 4 yearsâ€™ experience working on innovative projects in the public and private sector combined with success in business development, recruitment, and strategic communications; with a strong capacity to lead teams and collaborate with consultants to initiate and implement projects. A seasoned facilitator recognized for training and developing content for capacity building and learning development. She offers additional transferable skills in strategic business planning, conflict management, and people management gleaned from experience working with Private Sector and Non-Governmental Organization.</p>
                  </div>
                  
-                 <div> 
+                 <div id="exp"> 
                      <h4>WORK EXPERIENCE</h4> 
 
                      <table>
                          <th>Phoenix Learning and Developmental Academy </th>
-                         <th id="date">[Oct 2018 - Date]</th>
+                         <th class="date">[Oct 2018 - Date]</th>
                      </table>
 
                       <p><strong>Consultant / Senior Project Officer</strong></p>
                       <p><em>Key Contributions:</em></p>
                      
                      <ul>
-                         <li>Satisfactory completed 5 small-scale projects in the SME’s Desk Unit by providing business set-up advisory services for direct business impact. </li>
+                         <li>Satisfactory completed 5 small-scale projects in the SMEâ€™s Desk Unit by providing business set-up advisory services for direct business impact. </li>
                          <li>Responsible for measuring and evaluating projects undertaken by the organization, and ensure consistency in project objectives. </li>
                          <li>Use of success indicators to deliver timely and relevant project reports, and future projections based off of improvement. </li>
                          <li>Researched, contacted and developed relationships with potential clients</li>
@@ -110,7 +139,7 @@
 
                       <table>
                           <th>The Ibadan School of Government and Public Policy</th>
-                          <th id="date">[July 2017 - Oct 2018]</th>
+                          <th class="date">[July 2017 - Oct 2018]</th>
                       </table>
 
                       <p><strong>Project Officer and Content Developer</strong></p>
@@ -125,24 +154,24 @@
 
                  </div>
 
-                 <div> 
+                 <div id="tab"> 
                      <h4>QUALIFICATION</h4> 
 
-                     <div id="tab"> 
+                     <div> 
                          <table>
                              <th>MBA (in-view)</th>
-                             <th id="date">[2019]</th>
+                             <th class="date">[2019]</th>
                          </table>
                       </div>
-                         <p>Smartly Institute</p>
+                      <p>Smartly Institute</p>
 
                       <div>
                          <table>
                              <th>Bachelor of Arts in Philosophy</th>
-                             <th id="date">[Oct 2016]</th>
+                             <th class="date">[Oct 2016]</th>
                          </table>
                       </div>
-                         <p>University of Lagos</p>
+                      <p>University of Lagos</p>
 
                  </div>
 
@@ -177,4 +206,7 @@
     </div> 
 
 </body>
+   
+
+
    
