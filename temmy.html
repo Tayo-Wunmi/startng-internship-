@@ -5,97 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>TEMITAYO'S CV</title>
-    <style>
-        
-        body{
-            background-color: #EEE;
-            font-family: Helvetica, Arial, sans-serif;
-        }
-
-        p {
-        margin: 2px;
-        font-size: 13px;
-        }
-
-        h4 {
-           background-color:green;
-           color: white;
-           text-align: center;
-       }
-
-       li, ol {
-           font-size: 13px;
-           line-height: 20px; 
-       }
-
-       #container{
-            background-color: white; 
-            width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 10px;
-       }
-
-       #display{
-           float: right; 
-           margin-right: 20px;
-           margin-top: 20px;
-       }
-
-       #header{
-            color: green;
-            width: 600px;
-            float: left; 
-            margin-left: 20px;
-            padding: 5px;
-       }
-
-       #content {
-           clear: both;
-           padding: 20px;
-           text-align: justify;
-       }
-
-       #first p {
-           line-height: 25px;
-       }
-
-       #tab {
-           margin-bottom: 10px; 
-           line-height: 25px;
-       }
-
-       table {
-           width: 100%;
-           font-size: 13px;
-       }
-
-       th { 
-           text-align: left; 
-           color: green;
-       }
-
-       #exp .date {
-           text-align: right;
-      }
-      
-      #tab .date {
-           text-align: right;
-      }
-
-       #skill ul {
-           line-height: 25px;
-           margin-top:14px;
-           margin-bottom:20px;
-       }
-
-       #skill li {
-           font-weight: bold;
-           color: green;
-           margin-top: 15px;
-       }
-        
-    </style>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 
 <body>
@@ -202,10 +112,26 @@
                              <ol>Language: Proficient in English</ol>
                       </ul>
                  </div>
+                
+                 <div id="data">
+                     <h4> CONTACT ME</h3> 
+                     <p>If you want to reach me, kindly fill this form. </p> 
 
-
+                     <form name="ContactUs" method="post" action="/submit.php" onsubmit="return TAYOCV();">
+                         <fieldset>  
+                             <p> Name: <input type=”text” placeholder="Enter your name" minlength="4" name=”name” required> </p>
+                             <p> Email: <input type=”text” placeholder="Enter Email" name=”Email” required> </p>
+                             <p> Title: <input type=”text” placeholder="Input Message Subject" name=”Title”> </p>
+                             <p> Message: <textarea placeholder="Type your message here " minlength="20" name="Message" > </textarea> </p>
+                             <button type="submit" class="submission">Send Your Inquiry</button>
+                         </fieldset> 
+                     </form>
+                 </div>
+               
             </div>
     </div> 
+    
+    <footer>Made By Temitayo &copy; 2019</footer>
 
 </body
     
