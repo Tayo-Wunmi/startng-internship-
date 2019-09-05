@@ -37,8 +37,6 @@ form.addEventListener('submit',(e) => {
     if (message.lenght > 0) {
         e.preventDefault() 
         errorElement.innerText = message.join(",")
-    }
-
-    
+    }    
 })
 
