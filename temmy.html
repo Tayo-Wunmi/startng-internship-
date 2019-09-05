@@ -113,19 +113,35 @@
                       </ul>
                  </div>
                 
+              
                  <div id="data">
                      <h4> CONTACT ME</h3> 
                      <p>If you want to reach me, kindly fill this form. </p> 
+                     
+                     <div id="error"></div>
+                     <form id="form" action="/" method="GET">
+                         <div>
+                             <label for="name">Name</label>
+                             <input id="name" name="name" type="text" required>
+                         </div>
 
-                     <form name="ContactUs" method="post" action="/submit.php" onsubmit="return TAYOCV();">
-                         <fieldset>  
-                             <p> Name: <input type=”text” placeholder="Enter your name" minlength="4" name=”name” required> </p>
-                             <p> Email: <input type=”text” placeholder="Enter Email" name=”Email” required> </p>
-                             <p> Title: <input type=”text” placeholder="Input Message Subject" name=”Title”> </p>
-                             <p> Message: <textarea placeholder="Type your message here " minlength="20" name="Message" > </textarea> </p>
-                             <button type="submit" class="submission">Send Your Inquiry</button>
-                         </fieldset> 
-                     </form>
+                        <div>
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="text" required>
+                       </div>
+
+                       <div>
+                            <label for="title">Title</label>
+                            <input id="title" name="title" type="text">
+                       </div>
+
+                       <div>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message"> </textarea>
+                       </div> 
+                       <button type="submit"> Submit </button> 
+        
+                     </form>      
                  </div>
                
             </div>
