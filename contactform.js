@@ -1,54 +1,44 @@
 
+const name = document.getElementById("name")
+const name = document.getElementById("email")
+const name = document.getElementById("title")
+const name = document.getElementById("user_m")
+const form = document.getElementById("form")
+const errorElement = documentElementById("error")
 
-function TAYOCV() {
 
-var name = document.getElementById("name").value;
-var email = document.getElementById("email").value;
-var title = document.getElementById("title").value;
-var message = document.getElementById("message").value;
+form.addEventListener('submit',(e) => {
+    let message =[]
+    if (name.value === "" || name.value == null) {
+        message.push("Name is required")
+    }
 
-         if (name.length < 4)								 
-	 { 
-		window.alert("Name is too short"); 
-		name.focus(); 
-		return false; 
-	 } 
+    if (name.value.lenght <= 4) {
+        message.push("Name is too short")
+    }
 
-	 if (email.value == "")                                   
-         { 
-               window.alert("Please enter a valid e-mail address."); 
-               email.focus(); 
-               return false; 
-        } 
-   
-        if (email.value.indexOf("@", 0) < 0)                 
-        { 
-              window.alert("Please enter a valid e-mail address."); 
-              email.focus(); 
-              return false; 
-        } 
-   
-        if (email.value.indexOf(".", 0) < 0)                 
-        { 
-                window.alert("Please enter a valid e-mail address."); 
-                email.focus(); 
-                return false; 
-        } 
-        
-        if (message.lenght <=20)								 
-	{ 
-		window.alert("Type your message"); 
-		message.focus(); 
-		return false; 
-	} 
+    if (email.value == ""){                                    
+        message.push("Please enter a valid e-mail address.");
+    } 
 
-	if (validation())
-        {
-               var x = document.getElementsByTagName("form");
-               x[0].submit();
-               alert(" Name : " + name + " n Email : " + email + " n Title : " + title + " n Message : " + message + " n Form Tag : <form>nn Form Submitted Successfully......");
-        }
-        return true; 
-        }
+   if (email.value.indexOf("@", 0) < 0 || email.value.indexOf(".", 0) < 0) {                
+        message.push("Please enter a valid e-mail address."); 
+   } 
 
+    if (title.value === "") {
+        message.push("Enter the title of your message")
+    } 
+
+    if (user_m.value.lenght <= 20) {
+        message.push("Type more than 20 words....")
+    }
+
+
+    if (message.lenght > 0) {
+        e.preventDefault() 
+        errorElement.innerText = message.join(",")
+    }
+
+    
+})
 
